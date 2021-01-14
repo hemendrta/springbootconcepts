@@ -1,0 +1,11 @@
+package com.jpaexample.entities;
+
+public class Person {
+	
+	private int id;
+	private String firstName;
+	private String middleName;
+	private String lastName;
+	private Long mobile;
+
+}

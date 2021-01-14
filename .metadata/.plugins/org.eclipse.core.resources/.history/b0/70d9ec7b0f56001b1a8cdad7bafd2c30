@@ -1,0 +1,16 @@
+package com.jpaexample.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Person {
+
+	private int id;
+	private Long aadhar;
+	private String pan;
+	private String firstName;
+	private String middleName;
+	private String lastName;
+	private Long mobile;
+
+}

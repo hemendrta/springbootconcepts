@@ -1,0 +1,5 @@
+package com.jpaexample.repositories;
+
+public interface PersonRepo {
+
+}

@@ -1,0 +1,13 @@
+package com.jpaexample.repositories;
+
+import org.springframework.data.repository.CrudRepository;
+
+import com.jpaexample.entities.Person;
+
+Customer QueryFinders  
+
+Reference Link: 
+
+public interface PersonRepo extends CrudRepository<Person, Integer> {
+
+}

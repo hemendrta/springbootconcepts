@@ -1,0 +1,5 @@
+package com.jpaexample.repositories;
+
+public class PersonRepo extends crud{
+
+}
