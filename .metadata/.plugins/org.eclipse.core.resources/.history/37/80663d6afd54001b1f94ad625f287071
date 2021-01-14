@@ -1,0 +1,14 @@
+package com.jpaexample.entities;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Employee {
+	
+	private int id;
+	private String name;
+	private String address;
+	
+	
+	
+}
