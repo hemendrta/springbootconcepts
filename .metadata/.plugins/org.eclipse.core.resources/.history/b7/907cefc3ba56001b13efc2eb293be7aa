@@ -90,14 +90,8 @@ public class CustomQuery {
 		System.out.println();
 		System.out.println("-------------------------------------------------------------------------------------");
 		
-		List<Person> person = personRepo.getPersons();
+		List<Person> person = personRepo.getPerson();
 		person.forEach(p->System.out.println(p));
-		
-		System.out.println();
-		System.out.println("-------------------------------------------------------------------------------------");
-		
-		List<Person> personS1 = personRepo.getPersonByPan("BFHPC6065G");
-		personS1.forEach(p->System.out.println(p));
 
 	}
 

@@ -29,7 +29,7 @@ public interface PersonRepo extends CrudRepository<Person, Integer> {
 
 	@Query("select p from Person p")
 	public List<Person> getPersons();
-
+	
 	@Query("select p from Person p where p.pan=:n")
 	public List<Person> getPersonByPan(@Param("n") String pan);
 

@@ -96,8 +96,8 @@ public class CustomQuery {
 		System.out.println();
 		System.out.println("-------------------------------------------------------------------------------------");
 		
-		List<Person> personS1 = personRepo.getPersonByPan("BFHPC6065G");
-		personS1.forEach(p->System.out.println(p));
+		List<Person> person = personRepo.getPersonByPan("BFHPC6065G");
+		person.forEach(p->System.out.println(p));
 
 	}
 

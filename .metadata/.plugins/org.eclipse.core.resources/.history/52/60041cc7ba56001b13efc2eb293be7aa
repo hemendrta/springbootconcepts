@@ -6,8 +6,6 @@ import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.query.Param;
-
 import com.jpaexample.entities.Person;
 
 /*
@@ -28,9 +26,6 @@ public interface PersonRepo extends CrudRepository<Person, Integer> {
 	 */
 
 	@Query("select p from Person p")
-	public List<Person> getPersons();
-
-	@Query("select p from Person p where p.pan=:n")
-	public List<Person> getPersonByPan(@Param("n") String pan);
+	public List<Person> getPerson();
 
 }
