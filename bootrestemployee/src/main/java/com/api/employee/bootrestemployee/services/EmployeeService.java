@@ -13,6 +13,7 @@ public class EmployeeService {
 
     private static List<Employee> employees = new ArrayList<Employee>();
     private Employee employee;
+    private Employee employee2;
 
     static {
 
@@ -38,6 +39,20 @@ public class EmployeeService {
 
         employees.remove(employees.stream().filter(e -> e.getId() == id).findFirst().get());
 
+    }
+
+    public void addEmployee(Employee employee) {
+
+        employees.add(employee);
+
+    }
+
+    public void updateEmployee(Employee employee, int id) {
+
+        Employee employee2 = employees.stream().filter(e -> e.getId() == id).findFirst().get();
+        employee2.setName(employee.getName());
+        employee2.setEmail(employee.getEmail());
+        employee2.setMobile(employee.getMobile());
     }
 
 }
