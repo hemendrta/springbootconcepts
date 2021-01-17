@@ -2,7 +2,6 @@ package com.api.employee.bootrestemployee.services;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Optional;
 
 import com.api.employee.bootrestemployee.entities.Employee;
 
@@ -12,8 +11,6 @@ import org.springframework.stereotype.Service;
 public class EmployeeService {
 
     private static List<Employee> employees = new ArrayList<Employee>();
-    private Employee employee;
-    private Employee employee2;
 
     static {
 
