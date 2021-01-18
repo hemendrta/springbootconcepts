@@ -2202,3 +2202,18 @@ Binding(CTRL+SHIFT+C,
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-16 17:11:57.747
 !MESSAGE executing callback sts4.classpath.RGMJIgIM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-16 21:04:55.708
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RGMJIgIM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-16 21:04:55.896
+!MESSAGE unsubscribing from classpath changes: sts4.classpath.RGMJIgIM
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-16 21:04:55.905
+!MESSAGE subsribers = {}
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2021-01-16 21:04:55.912
+!MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.RGMJIgIM => OK
+
+!ENTRY org.eclipse.ui 2 2 2021-01-16 21:04:57.114
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)

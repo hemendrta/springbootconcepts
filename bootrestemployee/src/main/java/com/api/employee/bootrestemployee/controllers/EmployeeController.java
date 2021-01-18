@@ -25,6 +25,8 @@ import org.springframework.web.bind.annotation.RestController;
 200/204/206: Fetch All Records
 
  */
+
+
 // @Controller
 @RestController
 public class EmployeeController {
@@ -77,3 +79,116 @@ public class EmployeeController {
     }
 
 }
+
+// Notes:
+
+/*
+
+JSON Representation of an Object:
+
+	Class
+
+
+
+	class Student{
+		
+		private int id;
+		private String name;
+		private String email;
+		private long mobile;
+		private String country;
+		
+		//constructor
+		
+		//getters and setters	
+		
+	}
+
+
+Object in JSON
+
+	{
+		"id": ,
+		"name": ,
+		"email": ,
+		"mobile": ,
+		"country": ,
+
+	}
+
+Setting values to the object
+
+	{
+		"id": 101,
+		"name": "Hemendra Singh Chouhan",
+		"email": "hemendra.singh.c@outlook.com",
+		"mobile": 7999996891,
+		"country": "India",
+	}
+
+Above mentioned is a simple case, suppose if we have a class inside a class
+
+	class Candidate{
+		
+		private int id;
+		private String name;
+		private String email;
+		private long contact;
+		
+		//Another Class
+		private Session session;
+		
+		//constructor
+		
+		//getters and setters
+
+	}
+	
+Another Class
+
+	class Session{
+
+		private int id;
+		private String profile;
+		
+		//constructor
+		
+		//getters and setters
+
+	}
+
+Corresponding JSON representation
+
+	{
+		
+		"id": ,
+		"name": ,
+		"email": ,
+		"contact": ,
+		"session": {
+			
+			"id": ,
+			"profile": ,
+			
+		},
+
+	}
+
+Setting Values
+
+	{
+		
+		"id": 101,
+		"name": "Hemendra Singh Chouhan",
+		"email": "hemendra.singh.c@outlook.com",
+		"contact": 7999996891,
+		"session": {
+			
+			"id": 1001,
+			"profile": "Technical Trainer",
+			
+		},
+
+	}
+
+*/
