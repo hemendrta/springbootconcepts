@@ -70,12 +70,12 @@ public class PersonController {
     }
 
     @DeleteMapping("/persons/{id}")
-    public ResponseEntity deleteById(@PathVariable("id") int id){
+    public ResponseEntity deleteById(@PathVariable("id") int id) {
 
-        if(personService.deletePersonById(id)==true){
+        if (personService.deletePersonById(id) == true) {
 
             return new ResponseEntity<>(HttpStatus.OK);
-        }else {
+        } else {
 
             return new ResponseEntity<>(HttpStatus.BAD_REQUEST);
 
@@ -84,12 +84,12 @@ public class PersonController {
     }
 
     @PutMapping("/persons/{id}")
-    public ResponseEntity updatePerson(@RequestBody Person person, @PathVariable("id") int id){
+    public ResponseEntity updatePerson(@RequestBody Person person, @PathVariable("id") int id) {
 
-        if(personService.updatePerson(person, id)==true){
+        if (personService.updatePerson(person, id) == true) {
 
             return new ResponseEntity<>(HttpStatus.OK);
-        }else{
+        } else {
 
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
         }
@@ -97,4 +97,3 @@ public class PersonController {
     }
 
 }
-
