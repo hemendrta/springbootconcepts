@@ -21,12 +21,31 @@
     	<p th:text="${#strings.capitalize(n)}"></p>
     	<p th:text="${names}"></p>
     	
+    	<!-- Iterating through a collection -->
+    	
     	<ul>
     	
     		<li th:each="k,status : ${names}"><p th:text="${status.index + 1}+'  '+ ${k}"/></li>
     	
     	</ul>
-    
+    	
+    	<hr>
+    	
+    	<ul>
+    	
+    		<li th:each="k,status : ${names}"><p th:style="${status.odd} ? 'font-weight:bold'" th:text="${status.index + 1}+'  '+ ${k}"/></li>
+    	
+    	</ul>
+    	
+    	<!-- conditions  -->
+    	
+    	<h4 th:text="${value} ? 'Value is True' : 'Value is False'"></h4>
+    	
+    	<!-- usage of if else -->
+    	
+    	<h5 th:if="${designation}=='Developer'">Developer</h5>
+    	<h5 th:unless="${designation}=='Developer'">Trainer</h5>
+    	
     </div>
   </body>
 </html>

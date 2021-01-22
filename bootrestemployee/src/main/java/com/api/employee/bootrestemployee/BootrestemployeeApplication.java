@@ -25,6 +25,12 @@ public class BootrestemployeeApplication {
 		names.addAll(List.of("Hemendra Singh Chouhan", "Aditi Gupta Chouhan", "Nisha Singh Chouhan", "Subhash Singh Chouhan"));
 		model.addAttribute("names", names);
 		model.addAttribute("name", str);
+		model.addAttribute("value", false);
+		model.addAttribute("designation", "Trainer");
+		
+		List<String> list = List.of("Hemendra", "Subhash", "Nisha", "Aditi");
+		model.addAttribute("list", list);
+		
 		return "index";
 
 	}
