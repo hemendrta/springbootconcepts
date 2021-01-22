@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+  </head>
+  <body>
+    <h4 th:text="${name}"></h4>
+    <h4 th:text="${# strings.toUpperCase(name)}"></h4>
+    <h4 th:text="${# strings.length(name)}"></h4>
+    <h5 th:text="${#strings.capitalize(name)}"></h5>
+    
+    <div th:with="a=5, b=100, n=${name}">
+    
+    <!-- Scope of the variables which are declared in the with is limited only to the div for which they have been assigned. -->
+    
+    	<p th:text="${a}"></p>
+    	<p th:text="${b}"></p>
+    	<p th:text="${a+b}"></p>
+    	<p th:text="${#strings.capitalize(n)}"></p>
+    	<p th:text="${names}"></p>
+    	
+    	<ul>
+    	
+    		<li th:each="k,status : ${names}"><p th:text="${status.index + 1}+'  '+ ${k}"/></li>
+    	
+    	</ul>
+    
+    </div>
+  </body>
+</html>
