@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8" />
+<title>Request Page</title>
+</head>
+<body>
+	<p style="text-transform: capitalize;">this is request page for the
+		demo usage of thymeleaf fragment...</p>
+
+	<!-- Footer Section -->
+
+	<!-- 
+	
+	we have to specify the mentioned syntax to include the fragment 
+	pageName::fragmentName
+	
+	There are 3 ways:
+	
+	insert
+	replace
+	include
+	
+	Each of them have difference working.
+	-->
+
+	<footer th:replace="footer::footer-section"></footer>
+
+</body>
+</html>
